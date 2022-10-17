@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Kanit:wght@500&family=Lato&family=Montserrat:wght@300&family=Open+Sans&display=swap');
+:root{
+    --white: #fff;
+    --black: #121212;
+    --gray: #393947;
+    --yellow: #ffbe00;
+}
+body{
+    background: url(../img/fundo.jpg)no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+  }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    background-color: rgba(0, 0, 0, 0.425) ;
+    color: var(--white);
+    padding: 40px;
+}
+header h1{
+    font-family: 'Kanit', sans-serif;  /* nao posso esquecer de alterar isso depois */
+    font-size: 50px;
+}
+.button2{
+    display: flex;
+    justify-content: center;
+}
+.btn2{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 10px;
+    border: none;
+    margin-top: 12px;
+    transition: 1s;
+    background-color: var(--gray);
+    color: var(--white);
+    cursor: pointer;
+}
+.full-cards{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 100px 30px;
+}
+  
+.card{
+    background: var(--black);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+}
+  
+.card img {
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+}
+  
+.card:hover {
+    transform: scale(1.05, 1.05);
+}
