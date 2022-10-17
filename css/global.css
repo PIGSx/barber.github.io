@@ -1,0 +1,33 @@
+:root{
+    --white: #fff;
+    --gray: #424240;
+    --yellow: #ffbe00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav{
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--gray);
+    height: 8vh;
+}
+.logo{
+    height: 5vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
