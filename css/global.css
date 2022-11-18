@@ -43,7 +43,7 @@ nav{
     border-radius: 10px;
     border: none;
     transition: 1s;
-    background-color: var(--yellow);
+    background-color: green;
     color: var(--white);
     cursor: pointer;
 }
